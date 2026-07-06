@@ -68,7 +68,10 @@ class Quarry(
         if (!shouldProduce()) return true
 
         produce(menu)?.let {
-            menu.pushItem(it, *outputSlots)
+            // AV patch: Netherite output starts from Advanced Quarry and above
+            if (speed > 1 || it.type != Material.NETHERITE_INGOT) {
+                menu.pushItem(it, *outputSlots)
+            }
         }
 
         return true
