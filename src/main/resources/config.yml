@@ -148,7 +148,8 @@ quarry:
         REDSTONE: 1
         LAPIS_LAZULI: 1
         EMERALD: 1
-        DIAMOND: 1
+        DIAMOND: 2
+        NETHERITE_INGOT: 1
     nether:
       base-product: NETHERRACK
       products:
@@ -174,6 +175,7 @@ quarry:
     EMERALD: .5
     COAL: .5
     GOLD_INGOT: .5
+    NETHERITE_INGOT: .5
 
 # The maximum possible level of every enchantment in advanced anvil
 # all the keys are the key part of an Enchantment's NamespacedKey
