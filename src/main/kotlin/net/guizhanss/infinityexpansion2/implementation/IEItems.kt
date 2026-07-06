@@ -2388,4 +2388,10 @@ object IEItems : ItemRegistry(InfinityExpansion2.instance, InfinityExpansion2.lo
         recipeType = RecipeType.NULL
     }
     //</editor-fold>
+
+
+// AV patch: allow Empty Mob Data Card to stack up to 64
+init {
+    MOB_DATA_CARD.itemMeta = MOB_DATA_CARD.itemMeta.apply { setMaxStackSize(64) }
+}
 }
