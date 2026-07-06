@@ -1,4 +1,4 @@
-name: Blob Build
+name: Build
 
 on:
   push:
