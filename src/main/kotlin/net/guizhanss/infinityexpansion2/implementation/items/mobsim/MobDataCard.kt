@@ -87,7 +87,7 @@ class MobDataCard(
             )
             val meta = item.itemMeta
             PersistentDataAPI.setString(meta, Keys.MOB_DATA_ID, id)
-            item.itemMeta = meta
+            ; meta.setMaxStackSize(64); item.itemMeta = meta
             return item
         }
 
